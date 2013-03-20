@@ -39,7 +39,7 @@ function delay(delaytime, iterator) {
 			});
 		}
 	}
-}
+}	
 
 function feedbackDelay(feedback, delaytime, iterator) {
 }
@@ -50,7 +50,7 @@ function stereo1async(inputiterator) {
 	return {
 		nextAsync: function(resultcallback) {
 			resultcallback([input, input]);
-		} 	
+		}
 	}
 }
 
@@ -91,19 +91,20 @@ a a b b c c d d
 
 */
 
+/*
+
+function seq(tid) { return [tid, 440, tid <100]; }
 
 
+function osc([tid, freq, onoff]) { return Math.sin(tid * freq * Math.PI / 22050) * onoff ? 1.0 : 0.0; }
 
 
+function eko([vågform, buffer]) { return [outputvågform, nybuffer]; }
 
 
+function output([vågform, buffer]) { .. }
 
-
-
-
-
-
-
+*7
 
 
 
